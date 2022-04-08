@@ -7,6 +7,7 @@ def getJobList():
     url = 'https://www.indeed.com/jobs?q={role}&l={location}'
     # Complete the missing part of this function here
     #dasha was here
+#123f
 
 #save data in csv file
 def saveDataInCSV():
