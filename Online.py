@@ -1,12 +1,12 @@
 #import beautifulsoup and request here
 
-import request
+import requests
 from bs4 import BeautifulSoup
 #function to get job list from url 'https://www.indeed.com/jobs?q={role}&l={location}'
 def getJobList():
     url = 'https://www.indeed.com/jobs?q={role}&l={location}'
     # Complete the missing part of this function here
-    r = request.get(url)
+    r = requests.get(url)
     #return html
 
 #save data in csv file
@@ -24,7 +24,7 @@ def main():
     location = input()
     print("Job role: ", role)
     print("location: ", location)
-    getJobList(role,location)
+    getJobList(role, location)
 
 
 
