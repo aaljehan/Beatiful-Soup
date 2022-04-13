@@ -1,11 +1,8 @@
 #import beautifulsoup and request here
 
-#json and beautifulsoup not used for task 3
 import requests
 import json
 from bs4 import BeautifulSoup
-
-
 
 #function to get job list from url 'https://www.indeed.com/jobs?q={role}&l={location}'
 def getJobList():
