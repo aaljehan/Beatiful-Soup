@@ -1,7 +1,12 @@
 #import beautifulsoup and request here
 
+
 import requests
+import json
 from bs4 import BeautifulSoup
+
+
+
 #function to get job list from url 'https://www.indeed.com/jobs?q={role}&l={location}'
 def getJobList():
     url = 'https://www.indeed.com/jobs?q={role}&l={location}'
@@ -24,7 +29,7 @@ def main():
     location = input()
     print("Job role: ", role)
     print("location: ", location)
-    getJobList(role, location)
+   # getJobList(role, location)
 
 
 
