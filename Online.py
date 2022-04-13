@@ -1,6 +1,6 @@
 #import beautifulsoup and request here
 
-
+#json and beautifulsoup not used for task 3
 import requests
 import json
 from bs4 import BeautifulSoup
