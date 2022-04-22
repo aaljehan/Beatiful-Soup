@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2 style="border:2px solid green;">Job Opportunities</h2>
+<div style="background-color:#eeeeee;">
+    {% for a in responseJSON %}
+    <p>
+    <div style="color: #3A7734"> <strong><h2> Title: </strong>{{ a.Title }}</div></h2>
+    </p>
+
+     <p>
+    <p> <strong> Company: </strong> {{ a.Company }}</p>
+    </p>
+      <p>
+    <p> <strong> Salary range: </strong> {{ a.Salary }}</p>
+    </p>
+     <p>
+    <p> <strong> Description: </strong> {{ a.Description }}</p>
+    </p>
+    {% endfor %}
+</div>
+</body>
+</html>
