@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .img1
+        {
+          float: right; 
+          display: block;
+          max-width: 100%;
+          height: auto; 
+        }
+        .centerabout{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          h1{
+            font-family: "Bungee Inline";
+            font-size:50px;
+          
+          }
+          p{
+            font-family: "Bungee Inline";
+            font-size: 16pt;
+
+          }
+
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+          .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+          button{
+            background-color: green;
+          border: black;
+          color:white;
+        display: inline-block;
+          font-size:16px;
+          padding:25px 40px;
+          text-align: center;
+          display: inline-block;
+        
+        }
+        .inputs{
+            background-color: green;
+          border: black;
+          color:white;
+        display: inline-block;
+          font-size:16px;
+          padding:25px 40px;
+          text-align: center;
+          display: inline-block;
+        
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+          }
+          
+    </style>
+
+    <script>
+      function myFunction() {
+        var data = [
+        {
+            "universityyName": "Queens University of Charlotte",
+            "tuition": "Approximately $7,220 per year",
+             "decription": "\nQueens University of Charlotte is located in Charlotte, NC, but also offers classes online. This school offers 21 programs which provide training for 13 qualifications , including North Carolina Substitute Teaching Certification, CFP and Certified Authorization Professional. When asked how they paid for their training, most reviewers responded, 'I paid for it myself'.The most commonly reported benefits of attending Queens University of Charlotte are 'Good teachers' and 'Positive environment', but respondents also mentioned 'Good career preparation' and 'Flexible class hours' as notable benefits. Queens University of Charlotte has been reviewed 29 times, with an average rating of 4.62 out of 5. About 93% of reviewers would recommend Queens University of Charlotte to a friend.",
+            "details":[
+               {
+                "major": "Arts and Design",
+                "minors": "\nArt History\nArts Leadership and Adminitration\nCreative Writing\nDramatic Literature\nGraphic Design"    
+               },
+               {
+                "major": "Education",
+                "minors": "\nMusic in Special Education\nSecondaryEducation"
+                
+               },
+               {
+                "major": "Sciences and Math",
+                "minors": "\nActuarail Science\nBiological SCience\nChemistry\nCommunity Education in Science"
+                
+               },
+               {
+                "major": "Communication",
+                "minors": "\nHealth Communication\nJournalism\nLiterary Studies"
+                
+               }
+            ]
+        },
+        {
+            "universityyName": "North Carolina State University",
+            "tuition":  "Approximately $4,565 per semester",
+            "decription":"Our state's technology economy is soaring. So is the need for skilled graduates. As the flagship STEM campus of the UNC System, it falls to NC State to meet that need.\nPut simply, North Carolina needs a bigger Wolfpack.\nOver the next five years, we plan to enroll about 4,000 more students in engineering and computer science. That growth will bring the student population of our world-renowned College of Engineering to around 14,000 and total enrollment at NC State to more than 40,000.The funding for this effort comes from “Engineering North Carolina's Future,” a state legislative initiative that will provide NC State with $20 million over the next two years to hire additional faculty and staff and $30 million for facility upgrades, with the aim of supporting that growing student body and the university as a whole",       
+            "details":[
+                {
+            "major": "Agricultural Sciences",
+            "minors": "\nBiological and Agricultural Engineering Technology\nFeed Milling\nAgricultural Business Management\nFood Science"
+            
+                },
+                {
+                    "major": "Engineering",
+                    "minors": "\nChemical Engineering\nNano-Science and Technology\n Computer Programming\nNuclear Engineering"
+                    
+                },
+                {
+                    "major": "Life Sciences",
+                    "minors": "\nBiological Sciences\nHealth\nBiomanufacturing\nHealth, Medicine and Human Values"
+                   
+                }
+            ]
+        },
+        {
+            "universityyName": "North Carolina State University Academics at Carolina",
+            "tuition":  "Approximately  $6,994 for in-state students per semester",
+             "decription":"Our state's technology economy is soaring. So is the need for skilled graduates. As the flagship STEM campus of the UNC System, it falls to NC State to meet that need.\nPut simply, North Carolina needs a bigger Wolfpack.\nOver the next five years, we plan to enroll about 4,000 more students in engineering and computer science. That growth will bring the student population of our world-renowned College of Engineering to around 14,000 and total enrollment at NC State to more than 40,000.The funding for this effort comes from “Engineering North Carolina's Future,” a state legislative initiative that will provide NC State with $20 million over the next two years to hire additional faculty and staff and $30 million for facility upgrades, with the aim of supporting that growing student body and the university as a whole",
+            "details":[
+                {
+                    "major": "Art, Design, and Photography",
+            "minors": "\nArt Histroy\nDramatic Art\nEnterpreneurship\nMedia and Journalism\nStudio Art"
+           
+                },
+                {
+                    "major": "Business, Economics, and Entrepreneurship",
+                    "minors": "\nArt Histroy\nDramatic Art\nEnterpreneurship\nMedia and Journalism\nStudio Art"
+                   
+                }
+            ]
+            }
+        
+    ]
+    
+  
+  
+        document.getElementById("json").innerHTML = JSON.stringify(data, undefined, 2);
+      }
+  
+
+
+      function add(a,b) {
+        localStorage.setItem("uni", a);
+        localStorage.setItem("major", b);
+        var x = localStorage.getItem("uni");
+     //   alert(x);
+        location.href= 'final.html';
+      }
+    </script>
+
+    <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="evaluate.css"> -->  
+    <title> Choice</title>
+
+</head>
+<body>
+    
+</div>
+<div class="topnav" id="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="showUniversities.html">Universities</a>
+    <a href="choice.html">Choice</a>
+</div>
+<div >
+    
+    <img class="img1" src="school.jpeg" alt="About">
+    <h1 style="text-align: center;">
+        
+            Make A<br>
+            Choice
+       
+    </h1>
+    <p id="paragraph">
+       
+            <pre>
+                <br>
+               
+                <input type="text" class="inputs" id="inputschool" placeholder="ENTER YOUR COLLEGE NAME" >
+            
+                <br>
+                <input type="text" class="inputs" id="inputmajor" placeholder="DESIRE MAJOR">
+            
+            
+                <br>
+               
+            
+            
+            </pre>
+           
+            <pre style="font-size: 14pt;">
+                <strong>
+                 Click on results to see 
+                 more information about
+                 choice</strong>
+         <!--  <button id="button1" onclick="location.href= 'final.html';" style="background-color: black; ">RESULTS</button>-->       
+                 <button id="button1" onclick="add(document.getElementById('inputschool').value,document.getElementById('inputmajor').value)" style="background-color: black; ">RESULTS</button>
+             </pre>
+            
+            
+             <br>
+
+       
+   </p>
+</div>
+<pre id="json"></pre>
+</body>
+</html>

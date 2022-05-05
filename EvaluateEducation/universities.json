@@ -1,0 +1,61 @@
+{
+    "university": [
+        {
+            "universityyName": "Queens University of Charlotte",
+            "tuition": "Approximately $7,220 per year",
+            "decription": "\nQueens University of Charlotte is located in Charlotte, NC, but also offers classes online. This school offers 21 programs which provide training for 13 qualifications , including North Carolina Substitute Teaching Certification, CFP and Certified Authorization Professional. When asked how they paid for their training, most reviewers responded, 'I paid for it myself'.The most commonly reported benefits of attending Queens University of Charlotte are 'Good teachers' and 'Positive environment', but respondents also mentioned 'Good career preparation' and 'Flexible class hours' as notable benefits. Queens University of Charlotte has been reviewed 29 times, with an average rating of 4.62 out of 5. About 93% of reviewers would recommend Queens University of Charlotte to a friend.",
+            "details": [
+                {
+                    "major": "Arts and Design",
+                    "minors": "\nArt History\nArts Leadership and Adminitration\nCreative Writing\nDramatic Literature\nGraphic Design"
+                },
+                {
+                    "major": "Education",
+                    "minors": "\nMusic in Special Education\nSecondaryEducation"
+                },
+                {
+                    "major": "Sciences and Math",
+                    "minors": "\nActuarail Science\nBiological SCience\nChemistry\nCommunity Education in Science"
+                },
+                {
+                    "major": "Communication",
+                    "minors": "\nHealth Communication\nJournalism\nLiterary Studies"
+                }
+            ]
+        },
+        {
+            "universityyName": "North Carolina State University",
+            "tuition": "Approximately $4,565 per semester",
+            "decription": "Our state's technology economy is soaring. So is the need for skilled graduates. As the flagship STEM campus of the UNC System, it falls to NC State to meet that need.\nPut simply, North Carolina needs a bigger Wolfpack.\nOver the next five years, we plan to enroll about 4,000 more students in engineering and computer science. That growth will bring the student population of our world-renowned College of Engineering to around 14,000 and total enrollment at NC State to more than 40,000.The funding for this effort comes from “Engineering North Carolina's Future,” a state legislative initiative that will provide NC State with $20 million over the next two years to hire additional faculty and staff and $30 million for facility upgrades, with the aim of supporting that growing student body and the university as a whole",
+            "details": [
+                {
+                    "major": "Agricultural Sciences",
+                    "minors": "\nBiological and Agricultural Engineering Technology\nFeed Milling\nAgricultural Business Management\nFood Science"
+                },
+                {
+                    "major": "Engineering",
+                    "minors": "\nChemical Engineering\nNano-Science and Technology\n Computer Programming\nNuclear Engineering"
+                },
+                {
+                    "major": "Life Sciences",
+                    "minors": "\nBiological Sciences\nHealth\nBiomanufacturing\nHealth, Medicine and Human Values"
+                }
+            ]
+        },
+        {
+            "universityyName": "North Carolina State University Academics at Carolina",
+            "tuition": "Approximately  $6,994 for in-state students per semester",
+            "decription": "Our state's technology economy is soaring. So is the need for skilled graduates. As the flagship STEM campus of the UNC System, it falls to NC State to meet that need.\nPut simply, North Carolina needs a bigger Wolfpack.\nOver the next five years, we plan to enroll about 4,000 more students in engineering and computer science. That growth will bring the student population of our world-renowned College of Engineering to around 14,000 and total enrollment at NC State to more than 40,000.The funding for this effort comes from “Engineering North Carolina's Future,” a state legislative initiative that will provide NC State with $20 million over the next two years to hire additional faculty and staff and $30 million for facility upgrades, with the aim of supporting that growing student body and the university as a whole",
+            "details": [
+                {
+                    "major": "Art, Design, and Photography",
+                    "minors": "\nArt Histroy\nDramatic Art\nEnterpreneurship\nMedia and Journalism\nStudio Art"
+                },
+                {
+                    "major": "Business, Economics, and Entrepreneurship",
+                    "minors": "\nArt Histroy\nDramatic Art\nEnterpreneurship\nMedia and Journalism\nStudio Art"
+                }
+            ]
+        }
+    ]
+}

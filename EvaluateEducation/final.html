@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .img1
+        {
+          float: right; 
+          display: block;
+          max-width: 100%;
+          height: auto; 
+        }
+        .rightDescription
+        {
+          float: right; 
+          display: block;
+          max-width: 100%;
+          height: auto; 
+        }
+        .centerabout{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          h1{
+            font-family: "Bungee Inline";
+            font-size:50px;
+          
+          }
+          p{
+            font-family: "Bungee Inline";
+            font-size: 16pt;
+
+          }
+
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+          .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+          .topnavdes {
+            overflow: hidden;
+          }
+          .topnavdes div {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+          button{
+            background-color: black;
+          border: black;
+          color:white;
+        display: inline-block;
+          font-size:16px;
+          padding:25px 40px;
+          text-align: center;
+          display: inline-block;
+        
+        }
+        .backgroundimage { 
+            background: url('finalresults.jpeg') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 600px;
+          }
+          
+    </style>
+
+    <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="evaluate.css"> -->  
+    <title> Home</title>
+    
+
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+
+    $(function() {
+
+
+   var people = [];
+var input1=localStorage.getItem("uni");
+var input2=localStorage.getItem("major");
+
+   $.getJSON('universities.json', function(data) {
+       $.each(data.university, function(i, f) {
+         if(f.universityyName == input1)
+          {
+            var tblRow = "<tr>" + "<td>" + f.universityyName + "</td>" +
+           "<td>" + f.tuition + "</td>" + "<td>" + f.decription + "</td>" ;
+          
+            $.each(f.details, function (key1, value1) {
+               
+                if(value1.major == input2)
+                {
+                  tblRow += "<td>" + value1.minors + "</td>" + "</tr>";
+                }
+            })
+        
+           $(tblRow).appendTo("#userdata tbody");
+          }
+     });
+
+   });
+
+});
+</script>
+
+</head>
+<body>
+
+<div class="topnav" id="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="showUniversities.html">Universities</a>
+    <a href="choice.html">Choice</a>
+</div>
+
+<div class="backgroundimage">
+    
+    <h1 style="text-align: right; color:white">
+        <pre>
+            Final    
+            Result :)
+        </pre>
+    </h1>
+</div>
+
+
+
+<div id="showResults" class="topnavdes">
+  <div id="websiteDescription" class="rightDescription" style="text-align: right;">
+    <p style="float: right;">
+        <pre>
+            In our server, We
+            provide a service
+            can help you to 
+            find the top 
+            concentration based on your 
+            major input
+        </pre>
+    </p>
+</div>
+<div id="results">
+    
+
+
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata">
+  <thead>
+            <th>University/College Name:</th>
+            <th>Tuition:</th>
+            <th>Description:</th>
+            <th>Top Concentrations in your major:</th>
+            
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+    
+
+
+</div>
+</body>
+</html>
